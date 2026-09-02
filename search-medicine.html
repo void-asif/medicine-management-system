@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Medicine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sidebar">
+    <div class="brand-logo"><img src="assets/logo.svg" alt="Health Care Medical Store"></div>
+    <ul>
+        <li><a href="index.html">🏠 Dashboard</a></li>
+        <li><a href="add-medicine.html">💊 Add Medicine</a></li>
+        <li><a href="sell-medicine.html">🛒 Sell Medicine</a></li>
+        <li><a href="stock.html">📦 Stock</a></li>
+        <li><a href="search-medicine.html">🔍 Search Medicine</a></li>
+        <li><a href="sales-history.html">📊 Sales History</a></li>
+        <li><a href="bill.html">🧾 Generate Bill</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><span class="theme-icon">🌙</span><span>Dark Mode</span></button>
+</div>
+<div class="page-content">
+<div class="form-container">
+
+    <h2>Search Medicine</h2>
+
+    <input
+    type="text"
+    id="searchName"
+    placeholder="Enter Medicine Name">
+
+    <button onclick="searchMedicine()">
+        Search
+    </button>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="js/search.js"></script>
+</div>
+<script src="theme.js"></script>
+</body>
+</html>

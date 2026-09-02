@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Store Management</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <div class="brand-logo"><img src="assets/logo.svg" alt="Health Care Medical Store"></div>
+
+    <ul>
+        
+        <li><a href="index.html"><i class="fas fa-home"></i> Dashboard</a></li>
+        <li><a href="add-medicine.html"><i class="fas fa-capsules"></i> Add Medicine</a></li>
+        <li><a href="sell-medicine.html"><i class="fas fa-cart-shopping"></i> Sell Medicine</a></li>
+        <li><a href="stock.html"><i class="fas fa-boxes"></i> Stock</a></li>
+        <li><a href="search-medicine.html">🔍 Search Medicine</a></li>
+        <li><a href="sales-history.html">📊 Sales History</a></li>
+        <li><a href="bill.html">🧾 Generate Bill</a></li>
+    </ul>
+
+    <button id="themeToggle" class="theme-toggle" type="button">🌙 Dark Mode</button>
+    
+</div>
+
+<div class="main-content">
+
+    <div class="topbar">
+        <h1>Medical Store Dashboard</h1>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Total Medicines</h3>
+            <p id="totalMedicine">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Stock</h3>
+            <p id="totalStock">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Low Stock</h3>
+            <p id="lowStock">0</p>
+        </div>
+        <div class="card">
+    <h3>Expiring Soon</h3>
+    <p id="expiryMedicine">0</p>
+</div>
+
+    </div>
+
+
+    <div class="alert-box">
+        <h2>Low Stock Medicines</h2>
+        <ul id="lowStockList"></ul>
+    </div>
+<script src="js/dashboard.js"></script>
+
+<script src="theme.js"></script>
+</body>
+</html>

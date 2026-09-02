@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Bill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sidebar">
+    <div class="brand-logo"><img src="assets/logo.svg" alt="Health Care Medical Store"></div>
+    <ul>
+        <li><a href="index.html">🏠 Dashboard</a></li>
+        <li><a href="add-medicine.html">💊 Add Medicine</a></li>
+        <li><a href="sell-medicine.html">🛒 Sell Medicine</a></li>
+        <li><a href="stock.html">📦 Stock</a></li>
+        <li><a href="search-medicine.html">🔍 Search Medicine</a></li>
+        <li><a href="sales-history.html">📊 Sales History</a></li>
+        <li><a class="active" href="bill.html">🧾 Generate Bill</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><span class="theme-icon">🌙</span><span>Dark Mode</span></button>
+</div>
+
+<div class="page-content">
+    <div class="form-container bill-form">
+        <h2>Generate Bill</h2>
+        <input type="text" id="customerName" placeholder="Customer Name">
+        <input type="text" id="medicineName" placeholder="Medicine Name">
+        <input type="number" id="quantity" min="1" placeholder="Quantity">
+        <button type="button" onclick="generateBill()">Generate Bill</button>
+        <div id="billOutput"></div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="js/bill.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

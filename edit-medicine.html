@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit Medicine</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="sidebar">
+    <div class="brand-logo"><img src="assets/logo.svg" alt="Health Care Medical Store"></div>
+    <ul>
+        <li><a href="index.html">🏠 Dashboard</a></li>
+        <li><a href="add-medicine.html">💊 Add Medicine</a></li>
+        <li><a href="sell-medicine.html">🛒 Sell Medicine</a></li>
+        <li><a href="stock.html">📦 Stock</a></li>
+        <li><a href="search-medicine.html">🔍 Search Medicine</a></li>
+        <li><a href="sales-history.html">📊 Sales History</a></li>
+        <li><a href="bill.html">🧾 Generate Bill</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><span class="theme-icon">🌙</span><span>Dark Mode</span></button>
+</div>
+<div class="page-content">
+<div class="form-container">
+
+<h2>Edit Medicine</h2>
+
+<form id="editForm">
+
+<input type="text" id="name">
+
+<input type="number" id="quantity">
+
+<input type="number" id="sellingPrice">
+
+<input type="date" id="expiryDate">
+
+<input type="text" id="location">
+
+<button type="submit">
+Update Medicine
+</button>
+
+</form>
+
+</div>
+
+<script src="js/edit.js"></script>
+</div>
+<script src="theme.js"></script>
+</body>
+</html>

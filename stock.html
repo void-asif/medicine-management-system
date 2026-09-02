@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Medicine Stock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="sidebar">
+    <div class="brand-logo"><img src="assets/logo.svg" alt="Health Care Medical Store"></div>
+    <ul>
+        <li><a href="index.html">🏠 Dashboard</a></li>
+        <li><a href="add-medicine.html">💊 Add Medicine</a></li>
+        <li><a href="sell-medicine.html">🛒 Sell Medicine</a></li>
+        <li><a href="stock.html">📦 Stock</a></li>
+        <li><a href="search-medicine.html">🔍 Search Medicine</a></li>
+        <li><a href="sales-history.html">📊 Sales History</a></li>
+        <li><a href="bill.html">🧾 Generate Bill</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><span class="theme-icon">🌙</span><span>Dark Mode</span></button>
+</div>
+<div class="page-content">
+<div class="table-container">
+
+<h2>Medicine Stock</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Qty</th>
+<th>Price</th>
+<th>Expiry</th>
+<th>Location</th>
+</tr>
+</thead>
+
+<tbody id="stockTableBody">
+
+</tbody>
+
+<script src="js/stock.js"></script>
+
+</table>
+
+</div>
+</div>
+<script src="theme.js"></script>
+</body>
+</html>
